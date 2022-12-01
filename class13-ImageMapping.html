@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageMapping</title>
+</head>
+<body>
+    <img src="https://www.w3schools.com/html/plc_trulli.jpg" alt="House"
+    srcset="/asserts/small.jpg 480w
+             /asserts/medium.jpg 800w,
+             /asserts/large.jpg 1200w"
+    sizes="(max.widith: 400px) 240x,
+            (max.widith: 960px) 480px,
+            (max.widith: 1440px) 960px"          
+    >
+    <picture>
+        <source media="(max.widith: 600px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+        <source media="(max.widith: 900px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+        <img src="https://www.w3schools.com/html/img_food.jpg" alt="">
+    </picture>
+
+    <!-- Image  Mapping -->
+
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="workspace" usemap="#workspace">
+
+    <map name="workspace">
+        <area shape="rect" coords="34,44,270,350" alt="Computer.html">
+        <area shape="rect" coords="290,172,333,250" href="phone,html" alt="phone">
+        <area shape="cricle" coords="337,300,44" href="cup.html" alt="Cup">
+
+    </map>
+
+</body>
+</html>
